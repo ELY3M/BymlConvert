@@ -1,8 +1,5 @@
 @echo off
-
-#BymlConvert by CVFD
-
-cd resources
-convert.exe batch %1
-
+rem BymlConvert by CVFD
+set /p byml="Drag and Drop your byml: "
+convert.exe batch "%byml:"=%"
 pause
